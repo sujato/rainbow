@@ -441,7 +441,7 @@ h5,
 h6
 {
     font-family: var(--pretty-font-family);
-    font-weight: var(--font-weight-semibold);
+    font-weight: 600;
     line-height: 1.25;
 
     display: inline-block;
@@ -493,7 +493,7 @@ dl.grid
 
 dt
 {
-    font-weight: var(--font-weight-semibold);
+    font-weight: 600;
 }
 
 dl.indent dd
@@ -559,7 +559,12 @@ section + section
 
 #toc ol > li
 {
-    font-weight: var(--font-weight-semibold);
+    font-weight: 600;
+}
+
+#toc ol > li > ol
+{
+    font-weight: 500;
 }
 
 #toc ol:nth-child(1) > li:nth-child(1)
