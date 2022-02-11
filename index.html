@@ -285,6 +285,8 @@ section
     max-width: var(--container-width);
 
     overflow-wrap: anywhere;
+
+    contain: content;
 }
 
 
@@ -354,23 +356,6 @@ ul,
 ol
 {
     padding-left: 2rem;
-}
-
-.front-page
-{
-    line-height: 1;
-
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
-    height: 100vh;
-    padding: 20vh 0;
-
-    text-align: center;
-
-    justify-content: space-between;
-    align-content: center;
 }
 
 .title-page
@@ -787,6 +772,11 @@ border:  1px solid #ccc;
 <picture>
 <img alt="" class="cover-image" src="img/cover_1_color.png">
 </picture>
+
+<picture>
+<source type="image/avif" srcset="img/cover_1_color.avif">
+<img alt="" class="cover-image" src="img/cover_1_color.png">
+</picture>
 </div>
 <div class="second-page">
 <div class="blessing">
@@ -810,13 +800,13 @@ border:  1px solid #ccc;
 <section class="mainmatter">
 <picture>
 
-<img alt="pink hearts" class="chapter-decoration" src="img/chap1.png">
+<img loading="lazy" alt="pink hearts" class="chapter-decoration" src="img/chap1.png">
 </picture>
 <h1><a href="#Welcoming_the_Rainbow-toc" id="Welcoming_the_Rainbow-heading">Welcoming the Rainbow</a></h1>
 <p>Rainbodhi LGBTQIA+ Buddhist Community has produced this booklet to give some practical tips to help make Buddhist temples, monasteries and organisations safe and welcoming for LGBTQIA+ Buddhists.</p>
 <picture>
 <source type="image/avif" srcset="img/4.avif">
-<img alt="monastic with rainbow flag and happy couple" class="pull-left" src="img/4.png">
+<img loading="lazy" alt="monastic with rainbow flag and happy couple" class="pull-left" src="img/4.png">
 </picture>
 <aside class="callout pink">
 <p>Together, we can make our Buddhist centres safer and more inclusive places for our rainbow community.</p>
@@ -833,8 +823,7 @@ border:  1px solid #ccc;
 <p>If individuals or Buddhist organisations are perpetrating homophobia, biphobia, transphobia or interphobia then they are perpetuating hatred, violence and abuse.</p>
 </aside>
 <picture>
-<source type="image/avif" srcset="img/6-7.avif">
-<img alt="two people reaching for each other surrounded by stars and hearts" src="img/6-7.png">
+<img loading="lazy" alt="two people reaching for each other surrounded by stars and hearts" src="img/6-7.png">
 </picture>
 <aside class="callout pink">
 <p>Understanding how individuals and organisations can be more welcoming and inclusive towards LGBTQIA+ Buddhists will help us truly practise loving-kindness and compassion towards everyone in our community.</p>
@@ -855,7 +844,7 @@ border:  1px solid #ccc;
 <p>There have always been queer, trans and intersex people in human history. LGBTQIA+ people are also spiritual people, so it’s not surprising to find that Buddhism has a LGBTQIA+ history.</p>
 <p>Early Buddhist texts discuss same-sex attraction and sexuality without any sense of moral judgement or negativity. There are also accounts of laypeople and monastics who transitioned across genders. Ancient Indian society recognised a category of people who were regarded as neither male nor female, who we might call transgender or third gender today, and another category of people who had both male and female sex characteristics, who we might refer to as intersex. Some of these groups experienced stigma and social disadvantages throughout Buddhism’s history, and for some groups, this discrimination continues today.</p>
 <picture>
-<img alt="person waving buddhist and rainbow flags" class="pull-right" src="img/9.png">
+<img loading="lazy" alt="person waving buddhist and rainbow flags" class="pull-right" src="img/9.png">
 </picture>
 <h3><a href="#Pride_in_Buddhism-toc" id="Pride_in_Buddhism-heading">Pride in Buddhism</a></h3>
 <p>LGBTQIA+ people have contributed to the flourishing of Buddhism as monastics, lay followers, teachers and scholars. However, their stories are often forgotten or their experiences are ignored. As today’s society becomes more accepting and understanding of LGBTQIA+ people generally, the time is right for Buddhist individuals and organisations to celebrate our rainbow community and show support in meaningful ways. This will ensure that LGBTQIA+ people are included as valued members of the Buddhist community in the future.</p>
@@ -863,12 +852,11 @@ border:  1px solid #ccc;
 <p>Everyone, regardless of gender or sexuality, deserves to live their life free from fear of rejection and be proud of who they are.</p>
 </aside>
 <picture>
-<img alt="golden hearts" class="chapter-decoration" src="img/chap2.png">
+<img loading="lazy" alt="golden hearts" class="chapter-decoration" src="img/chap2.png">
 </picture>
 <h1><a href="#Being_a_Spiritual_Friend_to_LGBTQIA+_Buddhists-toc" id="Being_a_Spiritual_Friend_to_LGBTQIA+_Buddhists-heading">Being a Spiritual Friend to LGBTQIA+ Buddhists</a></h1>
 <picture>
-<source type="image/avif" srcset="img/10.avif">
-<img alt="monastic wrapping couple with pink hearts" src="img/10.png">
+<img loading="lazy" alt="monastic wrapping couple with pink hearts" src="img/10.png">
 </picture>
 <aside class="callout yellow">
 <p>Good friendship is the whole of the spiritual path.</p>
@@ -884,8 +872,7 @@ border:  1px solid #ccc;
 <p>It’s good to remember that there are already LGBTQIA+ people in Buddhist communities. We should never assume that everyone is straight, or that we can tell someone’s gender or pronouns just by looking at them. Acknowledging that LGBTQIA+ people attend temples, retreats and centres is the first step to becoming more inclusive.</p>
 <p>LGBTQIA+ people have often been made to feel invisible in Buddhist communities and their specific needs have not been acknowledged or catered for. Sometimes they can’t be open about their identities because they fear rejection and may be uncomfortable speaking up about issues that affect them. They might be unsure if Buddhist communities are safe because of a past bad experience with another Buddhist centre or with religion generally. Letting LGBTQIA+ Buddhists know that they are welcome in our communities shows goodwill and spiritual friendship. Inclusion lets rainbow Buddhists know they belong and are valued.</p>
 <picture>
-<source type="image/avif" srcset="img/12.avif">
-<img alt="rainbow colored heart with the words safe space" class="pull-left" src="img/12.png">
+<img loading="lazy" alt="rainbow colored heart with the words safe space" class="pull-left" src="img/12.png">
 </picture>
 <h3><a href="#Inclusion_Means_Making_Changes-toc" id="Inclusion_Means_Making_Changes-heading">Inclusion Means Making Changes</a></h3>
 <p>Welcoming LGBTQIA+ people to your community is a great start, but true inclusion means removing the barriers that currently exclude them. Inclusion requires an understanding of the perspective of LGBTQIA+ people, recognising the things that cause them harm and making the necessary changes to avoid it. This might involve altering administrative practices, such as membership and registration forms that only have male or female options. Or making physical changes, such as providing all-genders toilets and accommodation choices. It could mean change at a personal level, like being more aware of the words we use or the types of questions we ask so that we don’t make LGBTQIA+ people feel that they don’t belong.</p>
@@ -893,7 +880,7 @@ border:  1px solid #ccc;
 <h2><a href="#Celebrate_Diversity-toc" id="Celebrate_Diversity-heading">Celebrate Diversity</a></h2>
 <p>There are many ways Buddhist individuals and organisations can show support for the rainbow community. Celebrating diversity provides many opportunities for empathetic joy to arise in the happiness of others.</p>
 <picture>
-<img alt="diverse people" class="pull-right" src="img/13.png">
+<img loading="lazy" alt="diverse people" class="pull-right" src="img/13.png">
 </picture>
 <ul>
 <li>Undertake LGBTQIA+ diversity and inclusion training for yourself and your whole organisation. Encourage other Buddhist organisations to do the same.</li>
@@ -904,12 +891,12 @@ border:  1px solid #ccc;
 <li>Create publicly available safeguarding processes that allow people to raise issues and concerns about homophobia or transphobia and ensure that there will be follow-up and resolution.</li>
 </ul>
 <picture>
-<img alt="grey hearts" class="chapter-decoration" src="img/chap3.png">
+<img loading="lazy" alt="grey hearts" class="chapter-decoration" src="img/chap3.png">
 </picture>
 <h1><a href="#Barriers_to_LGBTQIA+_Inclusion-toc" id="Barriers_to_LGBTQIA+_Inclusion-heading">Barriers to LGBTQIA+ Inclusion</a></h1>
 <picture>
 <source type="image/avif" srcset="img/14.avif">
-<img alt="couple behind fence, looking to monastic who has turned away" class="pull-left" src="img/14.png">
+<img loading="lazy" alt="couple behind fence, looking to monastic who has turned away" class="pull-left" src="img/14.png">
 </picture>
 <aside class="callout blue">
 <p>Unless Buddhist individuals and organisations are actively being inclusive, LGBTQIA+ people will still be excluded.</p>
@@ -922,7 +909,7 @@ border:  1px solid #ccc;
 <p>Registration forms, membership forms and online databases often have only male or female options to choose from. This excludes many transgender people, non-binary people and also some intersex people who prefer to identify as neither male or female. Having only binary options signals to these people that they are not understood or welcomed even before they have signed up to a retreat or joined your e-newsletter.</p>
 <picture>
 <source type="image/avif" srcset="img/15.avif">
-<img alt="form with gendered titles" class="float-right" src="img/15.png">
+<img loading="lazy" alt="form with gendered titles" class="float-right" src="img/15.png">
 </picture>
 <p>To be more inclusive, add an ‘Other’ option to your forms that ask about gender and have an option such as ‘Mx’ or ‘No title’ in addition to Ms, Mrs or Mr. The name and gender that some people use in daily life might be different to what appears on their official ID documents, so add options for people’s preferred name and ask what pronouns they use. Also consider whether gender and titles need to be included on some forms at all if this information has no purpose.</p>
 
@@ -933,11 +920,11 @@ border:  1px solid #ccc;
 <h3><a href="#Toilets-toc" id="Toilets-heading">Toilets</a></h3>
 <picture>
 <source type="image/avif" srcset="img/16.avif">
-<img alt="all gender toilet" class="float-right" src="img/16.png">
+<img loading="lazy" alt="all gender toilet" class="float-right" src="img/16.png">
 </picture>
 <p>People should feel comfortable to use the toilet that matches their gender identity. Some transgender and non-binary people prefer to use an all-gender toilet rather than having to choose between male and female toilets. Ensuring that there are dedicated all-gender toilets in your centres and at retreats helps make gender-diverse people feel safe and included.</p>
 <picture>
-<img alt="retreat up stairs with person excluded below" class="pull-left" src="img/17.png">
+<img loading="lazy" alt="retreat up stairs with person excluded below" class="pull-left" src="img/17.png">
 </picture>
 <h3><a href="#Retreat_Accommodation-toc" id="Retreat_Accommodation-heading">Retreat Accommodation</a></h3>
 <p>Everyone should feel welcome and safe on a retreat, but for many LGBTQIA+ people, accommodation issues can be a source of distress. They may worry about rejection because of their sexuality, or being excluded due to their gender, or feel that their needs are simply not considered.</p>
@@ -945,7 +932,7 @@ border:  1px solid #ccc;
 <p>While there will always be a need for single-sex accommodation, for some trans and non-binary people, single-sex accommodation does not acknowledge that there are more gender identities, or that some people do not identify with being male or female. To be more inclusive and offer safe alternatives, retreat organisations can provide a choice of dormitories: female, male and all-gender. Registration forms listing these options allow people to nominate the one that suits them best.
 </p><p>Some same-sex attracted people may wish to stay in an all-gender dorm because staying in a single-sex dorm can be a challenging experience; other people in their room might make them feel unwelcome for being queer, or desire may become a distraction.</p>
 <picture>
-<img alt="people enjoying all-gendered dorm" src="img/18-19.png">
+<img loading="lazy" alt="people enjoying all-gendered dorm" src="img/18-19.png">
 </picture>
 <p>For these reasons all-gender dorm provides an additional choice so that trans, non-binary and same-sex-attracted people can make a choice that works for them. Another possibility is to offer LGBTQIA+ people the opportunity to nominate their preference for a single room, to help make their retreat experience as comfortable as possible.</p>
 <p>Welcoming LGBTQIA+ people to a retreat starts long before they arrive. Here are some things you can do:</p>
@@ -958,12 +945,10 @@ border:  1px solid #ccc;
 </ul>
 <picture>
 <source type="image/avif" srcset="img/chap4.avif">
-<img alt="dark hearts" class="chapter-decoration" src="img/chap4.png">
+<img loading="lazy" alt="dark hearts" class="chapter-decoration" src="img/chap4.png">
 </picture>
 <h1><a href="#Speech_that_Harms-toc" id="Speech_that_Harms-heading">Speech that Harms</a></h1>
-<picture>
-<source type="image/avif" srcset="img/20.avif">
-<img alt="monastic speaking harshly to couple’s dismay" class="pull-left" src="img/20.png">
+<picture><img loading="lazy" alt="monastic speaking harshly to couple’s dismay" class="pull-left" src="img/20.png">
 </picture>
 <aside class="callout violet">
 <p>Our words can make people feel safe, respected and included. Words can also make people upset, offended and excluded.</p>
@@ -990,7 +975,7 @@ border:  1px solid #ccc;
 <li>Never reduce a person to their body parts or sexual orientation. Instead, remember that they are a whole person and much more than these things. Don’t describe someone based on their sexuality (‘that gay guy over there’) or by their medical history (‘she’s a male-to-female’ or ‘he’s pre-op’).</li>
 </ul>
 <picture>
-<img alt="person saying nasty things" class="pull-right" src="img/22.png">
+<img loading="lazy" alt="person saying nasty things" class="pull-right" src="img/22.png">
 </picture>
 <h3><a href="#Inappropriate_questions-toc" id="Inappropriate_questions-heading">Inappropriate questions</a></h3>
 <p>Invasive questions about people’s personal lives are always inappropriate in a community space. Questioning someone about their genitals, surgical procedures, sexual orientation or sex life is unwelcome, because these things that are very private for everyone. Inappropriate questions include:</p>
@@ -1012,7 +997,7 @@ border:  1px solid #ccc;
 <li>You don’t look like a lesbian.</li>
 </ul>
 <picture>
-<img alt="joking cruelly while someone cries" class="pull-left" src="img/23.png">
+<img loading="lazy" alt="joking cruelly while someone cries" class="pull-left" src="img/23.png">
 </picture>
 <h3><a href="#Inappropriate_Jokes-toc" id="Inappropriate_Jokes-heading">Inappropriate Jokes</a></h3>
 <p>Things that are funny to one person might be very hurtful to another. Jokes about gender, sexuality or bodies are usually not funny for LGBTQIA+ people because these jokes are often used to exclude, bully and make fun of them.</p>
@@ -1024,7 +1009,7 @@ border:  1px solid #ccc;
 <p>Don’t reveal (or ‘out’) people’s sexuality or gender history without their permission. Gossiping about these things can hurt people and is wrong speech.</p>
 <picture>
 <source type="image/avif" srcset="img/24.avif">
-<img alt="speaking poop makes person cry" src="img/24.png">
+<img loading="lazy" alt="speaking poop makes person cry" src="img/24.png">
 </picture>
 <h2><a href="#The_Importance_of_Pronouns-toc" id="The_Importance_of_Pronouns-heading">The Importance of Pronouns</a></h2>
 <p>We all like to be recognised and respected for who we are.</p>
@@ -1037,7 +1022,7 @@ border:  1px solid #ccc;
 <p>These gender-neutral singular pronouns have a history of use going back to 1375. We often use ‘they’ to refer to a singular person whose gender pronouns are unknown, such as: ‘Someone left their umbrella here. How can we find out who they are?’ or ‘I’m not sure what their pronouns are. I should ask them next time.’</p>
 </aside>
 <picture>
-<img alt="rainbow image of pronouns he, she, they, her" class="pull-right" src="img/26.png">
+<img loading="lazy" alt="rainbow image of pronouns he, she, they, her" class="pull-right" src="img/26.png">
 </picture>
 <h3><a href="#Using_Pronouns_Correctly-toc" id="Using_Pronouns_Correctly-heading">Using Pronouns Correctly</a></h3>
 <p>We can model inclusive language in our Buddhist centres to show that we understand the importance of using pronouns. This helps make trans and gender-diverse people feel more welcome, understood and included.</p>
@@ -1056,7 +1041,7 @@ border:  1px solid #ccc;
 <h3><a href="#Misnaming-toc" id="Misnaming-heading">Misnaming</a></h3>
 <p>Names are important for all of us. Using someone’s name correctly is a simple courtesy. Misnaming (sometimes known as ‘dead-naming’) is referring to a trans person by the name they used before they transitioned. This can be hurtful and upsetting for trans people. Never ask a person to reveal their old name. When someone has decided to affirm their identity with a new name, we should use it to show that we respect and support them.</p>
 <picture>
-<img alt="rainbow image of pronouns him, xe, xem, them" class="pull-right" src="img/27.png">
+<img loading="lazy" alt="rainbow image of pronouns him, xe, xem, them" class="pull-right" src="img/27.png">
 </picture>
 <h2><a href="#Uncomfortable_Instructions-toc" id="Uncomfortable_Instructions-heading">Uncomfortable Instructions</a></h2>
 <p>Meditation teachers should be aware that some trans people struggle with discomfort about their bodies. This is sometimes called ‘gender dysphoria’, a feeling of distress that results from the incongruence between the sex they were assigned at birth and their gender identity. If a meditator is affected by gender dysphoria, use meditation techniques that don't focus on difficult areas of the body. If someone is struggling with chest dysphoria, suggest walking meditation, or loving-kindness meditation, or anything that doesn't draw attention to the chest.</p>
@@ -1066,12 +1051,12 @@ border:  1px solid #ccc;
 
 <picture>
 <source type="image/avif" srcset="img/chap5.avif">
-<img alt="red hearts" class="chapter-decoration" src="img/chap5.png">
+<img loading="lazy" alt="red hearts" class="chapter-decoration" src="img/chap5.png">
 </picture>
 <h1><a href="#Views_that_Harm-toc" id="Views_that_Harm-heading">Views that Harm</a></h1>
 <picture>
 <source type="image/avif" srcset="img/29.avif">
-<img alt="person in despair" class="pull-left" src="img/29.png">
+<img loading="lazy" alt="person in despair" class="pull-left" src="img/29.png">
 </picture>
 <aside class="callout pink">
 <p>People’s views can create prejudice and intolerance, discrimination and oppression, as well as hatred and violence towards LGBTQIA+ communities.</p>
@@ -1081,7 +1066,7 @@ border:  1px solid #ccc;
 <p>Although most LGBTQIA+ people live healthy and happy lives, research shows that a disproportionate number experience poorer mental health outcomes and have higher risk of suicidal behaviours. This is directly related to experiences of stigma, prejudice, discrimination and abuse for being LGBTQIA+.</p>
 <picture>
 <source type="image/avif" srcset="img/30.avif">
-<img alt="monastic prohibiting queer relationships to the despair of queer couple" class="pull-right" src="img/30.png">
+<img loading="lazy" alt="monastic prohibiting queer relationships to the despair of queer couple" class="pull-right" src="img/30.png">
 </picture>
 <aside class="boxed-text pink-background">
 <p class="boxed-text-caption">Discrimination Against LGBTQIA+ People</p>
@@ -1102,7 +1087,7 @@ border:  1px solid #ccc;
 
 <picture>
 <source type="image/avif" srcset="img/33.avif">
-<img alt="people and flowers happy" class="pull-left" src="img/33.png">
+<img loading="lazy" alt="people and flowers happy" class="pull-left" src="img/33.png">
 </picture>
 
 
@@ -1132,11 +1117,11 @@ border:  1px solid #ccc;
 </aside>
 <picture>
 <source type="image/avif" srcset="img/35.avif">
-<img alt="diverse people with rainbow flag" class="pull-right" src="img/35.png">
+<img loading="lazy" alt="diverse people with rainbow flag" class="pull-right" src="img/35.png">
 </picture>
 <picture>
 <source type="image/avif" srcset="img/chap6.avif">
-<img alt="pink hearts" class="chapter-decoration" src="img/chap6.png">
+<img loading="lazy" alt="pink hearts" class="chapter-decoration" src="img/chap6.png">
 </picture>
 <h1><a href="#A_Guide_to_LGBTQIA+_People-toc" id="A_Guide_to_LGBTQIA+_People-heading">A Guide to LGBTQIA+ People</a></h1>
 <aside class="callout red">
@@ -1144,12 +1129,12 @@ border:  1px solid #ccc;
 </aside>
 <picture>
 <source type="image/avif" srcset="img/36-37.avif">
-<img alt="happy diverse people young and old" src="img/36-37.png">
+<img loading="lazy" alt="happy diverse people young and old" src="img/36-37.png">
 </picture>
 <h2><a href="#Bodies,_Gender_Identity_and_Sexuality_are_All_Different_Things-toc" id="Bodies,_Gender_Identity_and_Sexuality_are_All_Different_Things-heading">Bodies, Gender Identity and Sexuality are All Different Things</a></h2>
 <p>Everyone has a body, gender identity and sexuality. It’s important to have some knowledge of these basic concepts and terminology to understand issues that affect the LGBTQIA+ community.</p>
 <picture>
-<img alt="various signs for gender" class="pull-right" src="img/38.png">
+<img loading="lazy" alt="various signs for gender" class="pull-right" src="img/38.png">
 </picture>
 <h3><a href="#Bodies_and_Sex_Characteristics-toc" id="Bodies_and_Sex_Characteristics-heading">Bodies and Sex Characteristics</a></h3>
 <p>All bodies are different. We come in a wide variety of shapes, sizes and features. Bodies also have a variety of different sex characteristics, that is, physical aspects related to body development, hormone regulation and reproductive systems. Primary sex characteristics are gonads, chromosomes, genitals and hormones. Secondary sex characteristics emerge at puberty and can include breast tissue, voice pitch, and facial and pubic hair.</p>
@@ -1166,14 +1151,14 @@ border:  1px solid #ccc;
 <h3><a href="#Sexual_Orientation-toc">Sexual Orientation</a></h3>
 <p>Sexual orientation or sexuality refers to who we are attracted to and who we are not attracted to. Sexual orientation has nothing to do with a body type or sex characteristics and it also has nothing to do with gender or gender identity. Sexuality is a spectrum, and many people’s sexuality changes over time.</p>
 <picture>
-<img alt="various signs for gender" class="pull-right" src="img/39.png">
+<img loading="lazy" alt="various signs for gender" class="pull-right" src="img/39.png">
 </picture>
 <h2><a href="#Intersex-toc" id="Intersex-heading">Intersex</a></h2>
 <p>Intersex is an umbrella term that describes people who have natural variations that differ from conventional ideas about ‘female’ or ‘male’ bodies. Around 1.7% of people are born with intersex traits that include a wide range of genital, chromosomal, hormonal and other physical characteristics. These characteristics might be apparent prenatally, at birth, or become known during puberty or later in life, such as when trying to conceive a child. Each trait has its own characteristics and differing degrees of expression.</p>
 <p>Many intersex people identify with the sex they were assigned at birth—simply as women or men—while some may identify as ‘other’. Some intersex people reject the sex they were assigned at birth but do not consider themselves transgender. Others may identify as transgender or gender diverse.</p>
 <p>Intersex people have the same range of identities as non-intersex people. Some identify with being LGBT but many do not. Being intersex is not about gender identity and is different to being trans or non-binary. Intersex also has nothing to do with sexual orientation: intersex people might be lesbian, gay, bi or straight, just like anyone else.</p>
 <picture>
-<img alt="decorative flowers" class="pull-left" src="img/40.png">
+<img loading="lazy" alt="decorative flowers" class="pull-left" src="img/40.png">
 </picture>
 <aside class="boxed-text pinkish-background">
 <p class="boxed-text-caption">Attitudes that Harm Intersex People</p>
@@ -1185,14 +1170,14 @@ border:  1px solid #ccc;
 </ul>
 </aside>
 <picture>
-<img alt="intersex flag" class="float-right" src="img/41.png">
+<img loading="lazy" alt="intersex flag" class="float-right" src="img/41.png">
 </picture>
 <h2><a href="#Trans_and_Gender_Diverse-toc" id="Trans_and_Gender_Diverse-heading">Trans and Gender Diverse</a></h2>
 <p>Trans and gender diverse are umbrella terms that describe people who identify differently to the gender that was assigned to them at birth. Trans people may view being transgender as a history or experience, rather than an identity in itself, and consider their gender identity as simply being female, male or non-binary. Or they might identify specifically as trans, a trans woman, or a trans man.</p>
 <p>The term ‘gender diverse’ includes all the different ways gender can be experienced. It can include people who identify as transgender as well as those questioning their gender. Gender diverse also includes people who don’t identify either as male or female, such as non-binary folks, as well as those whose gender is more of a spectrum. Terms some people use to describe the spectrum of their gender include genderfluid, genderqueer and gender non-conforming.</p>
 <picture>
 <source type="image/avif" srcset="img/42.avif">
-<img alt="person criying while others break their heart" src="img/42.png">
+<img loading="lazy" alt="person criying while others break their heart" src="img/42.png">
 </picture>
 <h3><a href="#Transitioning_or_Gender_Affirmation-toc" id="Transitioning_or_Gender_Affirmation-heading">Transitioning or Gender Affirmation</a></h3>
 <p>Transitioning or gender affirmation is when someone takes steps to socially or physically feel more aligned with their gender identity. This is a personal process that feels right for them in order to live in society as their gender. Transition may involve social, medical, surgical and legal steps that affirm a person’s gender. Transition does not mean someone is ‘changing gender’ or ‘having a sex change’ or ‘becoming’ a man or a woman; rather, they are affirming the gender they have always been. Every trans person’s journey is different; there is no such thing as ‘fully transitioned’, and everyone’s transition is complete in its own way regardless of appearance, documents, hormones or surgery.</p>
@@ -1205,7 +1190,7 @@ border:  1px solid #ccc;
 <p>‘Non-binary’, ‘NB’ or ‘enby’ is part of the trans umbrella. Non-binary is a term used to describe the gender of people who do not identify as either male or female. They may feel that they embody elements of both, or that they are somewhere in between, or that they are something different. Non-binary people can still have a strong sense of gender. It can be very distressing to be told that they must identify themselves either as male or female. A person might identify solely as non-binary or relate to non-binary as an umbrella term that covers diverse experience of non-binary gender. Terms under this umbrella include genderfluid, genderqueer (experiencing a spectrum of gender), trans-masculine and trans-feminine (being non-binary but more on the side of one gender), agender (having no gender), and bigender (identifying as both a man and a woman). These and other words describe how NB folks feel about their gender and how it is expressed. Many non-binary people also identify as transgender.</p>
 <p>Being non-binary is different from being intersex. Most non-binary people are born with bodies that look conventionally male or female but grow up feeling different. Being non-binary has nothing to do with sexual orientation: non-binary people have the same range of orientations as other people. Some non-binary people choose to have surgery or take hormones to alter their bodies and help them feel more comfortable. Others don’t want this and are happy with their bodies as they are. Some non-binary people present themselves androgynously, while others look conventionally male or female but are still non-binary.</p>
 <picture>
-<img alt="person yells at other who refuses to listen" class="pull-right" src="img/44.png">
+<img loading="lazy" alt="person yells at other who refuses to listen" class="pull-right" src="img/44.png">
 </picture>
 <aside class="boxed-text pinkish-background">
 <p class="boxed-text-caption">Attitudes that Harm Trans and Non-binary People</p>
@@ -1241,18 +1226,18 @@ border:  1px solid #ccc;
 <h1><a href="#Acknowledgements-toc" id="Acknowledgements-heading">Acknowledgements</a></h1>
 <picture>
 <source type="image/avif" srcset="img/aboriginal-flag.avif">
-<img alt="aboriginal flag" src="img/aboriginal-flag.png">
+<img loading="lazy" alt="aboriginal flag" src="img/aboriginal-flag.png">
 </picture>
 <p>Rainbodhi acknowledges the traditional custodians of this land. We pay respects to Elders past, present and emerging and also extend this respect to all First Nations people around the world.</p></section>
 <section class="acknowledgements">
 	<div class="logo-images">
 		<picture>
 <source type="image/avif" srcset="img/rainbodhi-logo.avif">
-<img alt="rainbodhi logo" src="img/rainbodhi-logo.png">
+<img loading="lazy" alt="rainbodhi logo" src="img/rainbodhi-logo.png">
 </picture>
 	<picture>
 <source type="image/avif" srcset="img/bcsnw-logo.avif">
-<img alt="buddhist council of nsw logo" src="img/bcsnw-logo.png">
+<img loading="lazy" alt="buddhist council of nsw logo" src="img/bcsnw-logo.png">
 </picture>
 </div>
 <p>This booklet was produced by LGBTQIA+ Buddhists. All identity groups in the rainbow acronym were consulted for input and feedback.</p>
