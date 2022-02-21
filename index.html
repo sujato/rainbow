@@ -283,18 +283,23 @@ section
 {
     position: relative;
 
-    max-width: var(--container-width);
-
     overflow-wrap: anywhere;
 }
 
-
+.frontmatter{
+    display:  flex;
+    flex-direction:  row;
+}
 
 .frontmatter ul
 {
     list-style-type: none;
 }
 
+.mainmatter, .endmatter{
+
+    max-width: var(--container-width);
+}
 .endmatter{
     text-align: center;
 }
@@ -372,8 +377,6 @@ ol
 
     text-align: center;
 
-    justify-content: space-between;
-    align-content: center;
     align-items:  center;
 }
 
@@ -399,24 +402,44 @@ ol
 .second-page
 {
     font-family: var(--pretty-font-family);
-    line-height: 1;
+    line-height: 1.2;
 
     display: flex;
     flex-direction: column;
 
     max-width: 100%;
     
-    padding: 6em 2em 0em 2em;
+    padding: 2em;
 
     text-align: center;
 
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
 
     border:  4px dotted var(--blue-color);
     border-radius:  1em;
 
-    margin:  0 2em 4em;
+    margin:  0 2em;
+
+    flex-basis: 50%;
+
+
+
+
+
+
+}
+
+.tableofcontents{
+ display: flex;
+    flex-direction: column;
+
+    max-width: 100%;
+    
+    align-content: center;
+    flex-basis: 50%;
+
+    align-items: center;
 }
 
 .blessing
@@ -424,7 +447,6 @@ ol
     font-size: 4rem;
     font-weight: 600;
     font-style: italic;
-    line-height: 1;
 
     color: var(--blue-color);
 
@@ -726,23 +748,20 @@ padding:  2em;
 border:  1px solid #ccc;
 }
 
+@media only screen and (max-width: 1200px)
+{
+
+.frontmatter{
+    flex-direction:  column;
+}
+.second-page{
+    padding:  4em 4em 0 4em;
+    margin-bottom:  4em;
+}
+}
 
 @media only screen and (max-width: 800px)
 {
-
-    #toggle
-    {
-        right: 82px;
-        left: auto;
-    }
-
-    #toggle + label
-    {
-        right: 12px;
-        left: auto;
-    }
-
-
 
     .pull-left {
     left: initial;
@@ -815,31 +834,29 @@ border:  1px solid #ccc;
 <article>
 
 <div class="title-page">
-<div class="main-title rainbow_text_animated">Welcoming the Rainbow</div>
+<div class="main-title">Welcoming the Rainbow</div>
 <div class="sub-title">A Guide to LGBTQIA+ Inclusion for Buddhists</div>
 <picture>
 <source type="image/avif" srcset="img/welcoming_the_rainbow2.png">
 <img width='2000' height='1207' alt="many diverse people with flowers, stars, and dhamma wheel" class="cover-image" src="img/cover_1_color.png">
 </picture>
 </div>
+<section class="frontmatter">
 <div class="second-page">
 <div class="blessing">
-<p>May all beings be happy.</p>
+<p class='rainbow_text_animated'>May all beings be happy.</p>
 </div>
 <picture>
 <source type="image/avif" srcset="img/2-3.avif">
 <img width='3508' height='2480' alt="LGBTQA letters in rainbow colors" src="img/2-3.png">
 </picture>
 </div>
-<section class="frontmatter">
-
-
-<section class="tableofcontents">
+<div class="tableofcontents">
 	<div class="unstructured-title">
 		Contents
 	</div>
 <nav id="toc"><ol><li><a href="#Welcoming_the_Rainbow-heading" id="Welcoming_the_Rainbow-toc">Welcoming the Rainbow</a><ol><li><a href="#The_Rainbow_Acronym-heading" id="The_Rainbow_Acronym-toc">The Rainbow Acronym</a></li><li><a href="#Creating_Change_Together-heading" id="Creating_Change_Together-toc">Creating Change Together</a></li><li><a href="#Listening_to_Our_Community-heading" id="Listening_to_Our_Community-toc">Listening to Our Community</a></li><li><a href="#Buddhism_has_a_LGBTQIA+_History_(and_Future)-heading" id="Buddhism_has_a_LGBTQIA+_History_(and_Future)-toc">Buddhism has a LGBTQIA+ History (and Future)</a><ol><li><a href="#Pride_in_Buddhism-heading" id="Pride_in_Buddhism-toc">Pride in Buddhism</a></li></ol></li></ol></li><li><a href="#Being_a_Spiritual_Friend_to_LGBTQIA+_Buddhists-heading" id="Being_a_Spiritual_Friend_to_LGBTQIA+_Buddhists-toc">Being a Spiritual Friend to LGBTQIA+ Buddhists</a><ol><li><a href="#Be_an_Ally-heading" id="Be_an_Ally-toc">Be an Ally</a></li><li><a href="#Promote_Inclusion-heading" id="Promote_Inclusion-toc">Promote Inclusion</a><ol><li><a href="#Inclusion_Means_Making_Changes-heading" id="Inclusion_Means_Making_Changes-toc">Inclusion Means Making Changes</a></li></ol></li><li><a href="#Celebrate_Diversity-heading" id="Celebrate_Diversity-toc">Celebrate Diversity</a></li></ol></li><li><a href="#Barriers_to_LGBTQIA+_Inclusion-heading" id="Barriers_to_LGBTQIA+_Inclusion-toc">Barriers to LGBTQIA+ Inclusion</a><ol><li><a href="#Administrative_Barriers_that_Exclude-heading" id="Administrative_Barriers_that_Exclude-toc">Administrative Barriers that Exclude</a></li><li><a href="#Physical_Barriers_that_Exclude-heading" id="Physical_Barriers_that_Exclude-toc">Physical Barriers that Exclude</a><ol><li><a href="#Gender-segregated_Seating-heading" id="Gender-segregated_Seating-toc">Gender-segregated Seating</a></li><li><a href="#Toilets-heading" id="Toilets-toc">Toilets</a></li><li><a href="#Retreat_Accommodation-heading" id="Retreat_Accommodation-toc">Retreat Accommodation</a></li></ol></li></ol></li><li><a href="#Speech_that_Harms-heading" id="Speech_that_Harms-toc">Speech that Harms</a><ol><li><a href="#Words_that_Hurt-heading" id="Words_that_Hurt-toc">Words that Hurt</a><ol><li><a href="#Disrespectful_Language-heading" id="Disrespectful_Language-toc">Disrespectful Language</a></li><li><a href="#Language_that_Excludes-heading" id="Language_that_Excludes-toc">Language that Excludes</a></li><li><a href="#Inappropriate_questions-heading" id="Inappropriate_questions-toc">Inappropriate questions</a></li><li><a href="#Backhanded_Compliments-heading" id="Backhanded_Compliments-toc">Backhanded Compliments</a></li><li><a href="#Inappropriate_Jokes-heading" id="Inappropriate_Jokes-toc">Inappropriate Jokes</a></li><li><a href="#Sexual_Innuendo-heading" id="Sexual_Innuendo-toc">Sexual Innuendo</a></li><li><a href="#Stereotyping-heading" id="Stereotyping-toc">Stereotyping</a></li><li><a href="#Outing-heading" id="Outing-toc">Outing</a></li></ol></li><li><a href="#The_Importance_of_Pronouns-heading" id="The_Importance_of_Pronouns-toc">The Importance of Pronouns</a><ol><li><a href="#Types_of_Pronouns-heading" id="Types_of_Pronouns-toc">Types of Pronouns</a></li><li><a href="#Using_Pronouns_Correctly-heading" id="Using_Pronouns_Correctly-toc">Using Pronouns Correctly</a></li></ol></li><li><a href="#Misgendering-heading" id="Misgendering-toc">Misgendering</a><ol><li><a href="#Misnaming-heading" id="Misnaming-toc">Misnaming</a></li></ol></li><li><a href="#Uncomfortable_Instructions-heading" id="Uncomfortable_Instructions-toc">Uncomfortable Instructions</a></li></ol></li><li><a href="#Views_that_Harm-heading" id="Views_that_Harm-toc">Views that Harm</a><ol><li><a href="#The_Harmful_Reality_of_Discrimination-heading" id="The_Harmful_Reality_of_Discrimination-toc">The Harmful Reality of Discrimination</a></li><li><a href="#A_Note_About_Not-Self-heading" id="A_Note_About_Not-Self-toc">A Note About Not-Self</a><ol><li><a href="#Who_are_You?-heading" id="Who_are_You?-toc">Who are You?</a></li></ol></li><li><a href="#Intersectional_Identities:_Race,_Gender_and_Sexuality-heading" id="Intersectional_Identities:_Race,_Gender_and_Sexuality-toc">Intersectional Identities: Race, Gender and Sexuality</a></li></ol></li><li><a href="#A_Guide_to_LGBTQIA+_People-heading" id="A_Guide_to_LGBTQIA+_People-toc">A Guide to LGBTQIA+ People</a><ol><li><a href="#Bodies,_Gender_Identity_and_Sexuality_are_All_Different_Things-heading" id="Bodies,_Gender_Identity_and_Sexuality_are_All_Different_Things-toc">Bodies, Gender Identity and Sexuality are All Different Things</a><ol><li><a href="#Bodies_and_Sex_Characteristics-heading" id="Bodies_and_Sex_Characteristics-toc">Bodies and Sex Characteristics</a></li><li><a href="#Bodies_and_Gender-heading" id="Bodies_and_Gender-toc">Bodies and Gender</a></li><li><a href="#Assigned_Gender-heading" id="Assigned_Gender-toc">Assigned Gender</a></li><li><a href="#Cisgender-heading" id="Cisgender-toc">Cisgender</a></li><li><a href="#Transgender-heading" id="Transgender-toc">Transgender</a></li><li><a href="#Sexual_Orientation-heading">Sexual Orientation</a></li></ol></li><li><a href="#Intersex-heading" id="Intersex-toc">Intersex</a></li><li><a href="#Trans_and_Gender_Diverse-heading" id="Trans_and_Gender_Diverse-toc">Trans and Gender Diverse</a><ol><li><a href="#Transitioning_or_Gender_Affirmation-heading" id="Transitioning_or_Gender_Affirmation-toc">Transitioning or Gender Affirmation</a></li><li><a href="#Social_Transitioning-heading" id="Social_Transitioning-toc">Social Transitioning</a></li><li><a href="#Physical_Transitioning-heading" id="Physical_Transitioning-toc">Physical Transitioning</a></li><li><a href="#Non-binary-heading" id="Non-binary-toc">Non-binary</a></li></ol></li><li><a href="#Sexual_Orientation-heading" id="Sexual_Orientation-toc">Sexual Orientation</a><ol><li><a href="#Lesbian-heading" id="Lesbian-toc">Lesbian</a></li><li><a href="#Gay-heading" id="Gay-toc">Gay</a></li><li><a href="#Queer-heading" id="Queer-toc">Queer</a></li><li><a href="#Bisexual-heading" id="Bisexual-toc">Bisexual</a></li><li><a href="#Heterosexual_(Straight)-heading" id="Heterosexual_(Straight)-toc">Heterosexual (Straight)</a></li><li><a href="#Romantic_Orientation-heading" id="Romantic_Orientation-toc">Romantic Orientation</a></li><li><a href="#Asexual/Ace-heading" id="Asexual/Ace-toc">Asexual/Ace</a></li></ol></li></ol></li><li><a href="#Acknowledgements-heading" id="Acknowledgements-toc">Acknowledgements</a></li></ol></nav>
-</section>
+</div>
 </section>
 <section class="mainmatter">
 <picture>
