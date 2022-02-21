@@ -763,7 +763,46 @@ border:  1px solid #ccc;
 }
 
 
+#shadowBox {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Black w/opacity/see-through */
+    border: 3px solid;
+}
 
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rainbow_text_animated {
+    animation: none;
+    color: var(--light-yellow-color);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .rainbow_text_animated {
+    /* `vibrate` keyframes are defined elsewhere */
+    animation:     animation: rainbow_animation 6s ease-in-out infinite;;
+  }
+}
 </style>
 </head>
 <body id="contents">
@@ -773,7 +812,7 @@ border:  1px solid #ccc;
 <article>
 
 <div class="title-page">
-<div class="main-title">Welcoming the Rainbow</div>
+<div class="main-title rainbow_text_animated">Welcoming the Rainbow</div>
 <div class="sub-title">A Guide to LGBTQIA+ Inclusion for Buddhists</div>
 <picture>
 <source type="image/avif" srcset="img/welcoming_the_rainbow2.png">
